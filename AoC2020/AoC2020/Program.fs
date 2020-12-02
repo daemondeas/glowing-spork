@@ -2,9 +2,15 @@
 
 module Program
 
+let day1 argv =
+    let args = Array.map int argv
+    Day1.firstTask (Array.toList args)
+
+let day2 argv =
+    Day2.secondTask argv
+
 [<EntryPoint>]
 let main argv =
-    let args = Array.map int argv
-    let message = Day1.secondTask (Array.toList args)
+    let message = day2 argv
     printfn "%d" message
     0 // return an integer exit code
