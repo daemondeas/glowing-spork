@@ -8,13 +8,8 @@
         { Policy   : PasswordPolicy
           Password : string }
 
-    let count x xs =
-        xs
-        |> Seq.filter (fun x' -> x' = x)
-        |> Seq.length
-
     let isValid (ppc:PasswordPolicyCombination) =
-        let amount = count ppc.Policy.Character ppc.Password
+        let amount = Common.count ppc.Policy.Character ppc.Password
         ppc.Policy.Minimum <= amount && ppc.Policy.Maximum >= amount
 
     let isValidToboggan (ppc:PasswordPolicyCombination) =
@@ -33,7 +28,7 @@
         Array.chunkBySize 3 ppcs
         |> Array.map createCombinationFromStringArray
         |> Array.map valid
-        |> count true
+        |> Common.count true
 
     let firstTask (ppcs:string[]) =
         countValid ppcs isValid

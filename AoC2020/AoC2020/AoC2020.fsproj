@@ -7,10 +7,13 @@
     <Folder Include="Inputs\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.fs" />
     <Compile Include="Day1.fs" />
     <Compile Include="Day2.fs" />
+    <Compile Include="Day3.fs" />
     <Compile Include="Program.fs" />
     <None Include="Inputs\input 1.txt" />
     <None Include="Inputs\input2.txt" />
+    <None Include="Inputs\input3.txt" />
   </ItemGroup>
 </Project>
