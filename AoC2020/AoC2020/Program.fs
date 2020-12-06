@@ -19,8 +19,12 @@ let day4 (arg: string) =
 let day5 argv =
     Day5.secondTask argv
 
+let day6 (arg: string) =
+    let args = arg.Split "\n\n"
+    Day6.secondTask args
+
 [<EntryPoint>]
 let main argv =
-    let message = day5 argv
+    let message = day6 Day6Input.input
     printfn "%d" message
     0 // return an integer exit code
