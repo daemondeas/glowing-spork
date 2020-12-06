@@ -12,8 +12,15 @@ let day2 argv =
 let day3 argv =
     Day3.secondTask argv
 
+let day4 (arg: string) =
+    let args = arg.Split "\n\n" |> Array.toList
+    Day4.secondTask args
+
+let day5 argv =
+    Day5.secondTask argv
+
 [<EntryPoint>]
 let main argv =
-    let message = day3 argv
+    let message = day5 argv
     printfn "%d" message
     0 // return an integer exit code

@@ -11,9 +11,14 @@
     <Compile Include="Day1.fs" />
     <Compile Include="Day2.fs" />
     <Compile Include="Day3.fs" />
+    <Compile Include="Day4Input.fs" />
+    <Compile Include="Day4.fs" />
+    <Compile Include="Day5.fs" />
     <Compile Include="Program.fs" />
     <None Include="Inputs\input 1.txt" />
     <None Include="Inputs\input2.txt" />
     <None Include="Inputs\input3.txt" />
+    <None Include="Inputs\input4.txt" />
+    <None Include="Inputs\input5.txt" />
   </ItemGroup>
 </Project>
