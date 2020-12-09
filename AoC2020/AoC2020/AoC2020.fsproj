@@ -20,6 +20,7 @@
     <Compile Include="Day7.fs" />
     <Compile Include="Day8Input.fs" />
     <Compile Include="Day8.fs" />
+    <Compile Include="Day9.fs" />
     <Compile Include="Program.fs" />
     <None Include="Inputs\input 1.txt" />
     <None Include="Inputs\input2.txt" />
@@ -29,5 +30,6 @@
     <None Include="Inputs\input6.txt" />
     <None Include="Inputs\input7.txt" />
     <None Include="Inputs\input8.txt" />
+    <None Include="Inputs\input9.txt" />
   </ItemGroup>
 </Project>
