@@ -34,8 +34,14 @@ let day8 (arg: string) =
 let day9 argv =
     Day9.secondTask argv
 
+let day10 argv =
+    Day10.secondTask argv
+
+let day11 argv =
+    Day11.secondTask argv
+
 [<EntryPoint>]
 let main argv =
-    let message = day9 argv
+    let message = day11 argv
     printfn "%d" message
     0 // return an integer exit code
